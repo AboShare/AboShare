@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrieren</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/png/Favicon.png">
+</head>
+
+<body>
+
+    <header class="flex" id="header">
+
+        <div class="container-header">
+
+            <a href="/index.html"><img src="png/AboShareLogo.png" alt="Aboshare Logo" width="250" height="auto" id="logo"></a>
+
+        </div>
+
+        <div class="container-header">
+
+        </div>
+
+        <nav class="container-header">
+
+            <a href="/index.html">
+
+                <button id="headerButtonLogin">Zurück zur Startseite</button>
+                
+            </a>
+
+        </nav>
+
+    </header>
+
+    <div class="loginForm">
+
+        <h1>Registrieren</h1>
+
+        <label for="">Benutzername</label> <br>
+        <input type="text" id="benutzername"> <br>
+
+        <label for="">E-Mail Adresse</label> <br>
+        <input type="email" id="email"> <br>
+
+        <label for="">Passwort</label> <br>
+        <input type="password" id="password"> <br> <br>
+
+        <button onclick="registrieren()">Registrieren </button>
+
+        <p id="nachricht"> </p>
+
+    </div>
+
+    <script src="js/registrieren.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Abo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/png/Favicon.png">
+</head>
+
+<body>
+
+    <header class="flex" id="header">
+
+        <div class="container-header">
+
+
+            <a href="/index.html"><img src="png/AboShareLogo.png" alt="Aboshare Logo" width="250" height="auto" id="logo"></a>
+
+
+        </div>
+
+        <div class="container-header">
+
+        </div>
+
+        <nav class="container-header">
+
+            <a href="/indexLoggedIn.html">
+
+                <button id="neuesAbo"> Alle Abos</button>
+                
+            </a>
+
+            <button id="logout" onclick="logout()"> Logout </button>
+
+        </nav>
+
+    </header>
+
+    <p id="infoText">Fülle dieses Formular aus, um dein Abo aufzuschalten:</p>
+
+    <div id="meinAbo">
+
+        <label for="spiel" id="angaben">Spiel:</label> <br>
+        <input id="spiel" type="text" value=""> <br>
+
+        <label for="datum" id="angaben">Datum:</label> <br>
+        <input id="datum" type="date" value=""> <br>
+
+        <label for="bild" id="angaben">Bild URL:</label> <br>
+        <input id="bild" type="text" value=""> <br>
+        <img id="bild-vorschau" width="300px" src="" alt=""> <br>
+        <a target="_blank" href="https://www.bern.com/assets/images/e/wankdorf-stadion_-50a07a8e.jpg">z.B. https://www.bern.com/assets/images/e/wankdorf-stadion_-50a07a8e.jpg</a>
+        <br> <br>
+
+        <label for="beschreibung" id="angaben">Beschreibung:</label> <br>
+        <textarea id="beschreibung" name="beschreibung"> </textarea> <br> <br>
+
+        <label for="verein" id="angaben">Verein:</label> <br>
+        <select class="dropdown" name="verein" id="verein">
+            <option value="1">Young Boys</option>
+            <option value="2">FC Basel</option>
+            <option value="3">FC St. Gallen</option>
+            <option value="4">FC Lugano</option>
+        </select> <br> <br>
+
+        <label for="gegenleistungen" id="angaben">Gegenleistung:</label> <br>
+
+        <div id="gegenleistungen" class="flex">
+
+
+        </div>
+
+        <button class="hidden" id="button-neue" onclick="neuesAbo()">Veröffentlichen</button>
+        <button class="hidden" id="button-aktualisieren" onclick="aktualisiereAbo()">Aktualisieren</button>
+        <button class="hidden" id="button-loeschen" onclick="loescheAbo()">Löschen</button>
+
+        <p id="nachricht"> </p>
+
+    </div>
+    
+    <script src="js/abo.js"></script>
+
+</body>
+
+</html>
